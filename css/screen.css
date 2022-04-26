@@ -330,7 +330,6 @@ ul.posts span {
     transition: all .23s ease;
 }
 .site .title a.extra:hover {
-    box-shadow: 0 -1px;
     text-decoration: none;
 }
 
