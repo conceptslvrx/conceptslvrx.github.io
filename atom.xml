@@ -3,11 +3,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Calvin Morett</title>
- <link href="https://calvinmorett.github.io/atom.xml" rel="self"/>
- <link href="https://calvinmorett.github.io"/>
+ <title>lvrx - knowledge base concept</title>
+ <link href="https://conceptslvrx.github.io/atom.xml" rel="self"/>
+ <link href="https://conceptslvrx.github.io"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>https://calvinmorett.github.io</id>
+ <id>https://conceptslvrx.github.io</id>
  <author>
    <name>knowledge base</name>
  </author>
