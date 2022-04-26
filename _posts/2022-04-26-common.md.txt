@@ -1,0 +1,44 @@
+--- 
+layout: post
+title: Common Issues
+---
+
+{{ page.title }}
+================
+<!--Available Meta Tags: Common Issues, FAQ, Support -->
+<p class="meta">Common Issues, FAQ, Support</p>
+
+![Common Issues](/images/commonissues.jpg "Common Issues Users Experience")
+
+## We've compiled on this page a collection of issues our users face. Below are some resolved problems where you may be able to find an answer.
+Still can't find what you're looking for? You can <a href="#">submit an issue, here's how.</a> 
+
+
+
+## Common Issues, by Application Feature
+
+	- Care Gaps
+	- Schedule View
+	- Medication
+	- Search
+	
+	Still can't find what you're looking for? You can <a href="#">submit an issue, here's how.</a> 
+
+## Common Issues, for Login, Multifactor Authentication, and PIN
+
+## Common Issues, regarding Permissions
+
+
+Able to do multiple things that would speed up and alter the workflow of image analysis - in a positive way, sync between two different clients, face detection and ability to easily transition into Adobe's other programs like Adobe Photoshop.
+
+Q: Can Face detection be run on one machine and then sync results to other Lightrooms?
+A: _PRO:_ Syncing between different Lightroom users is a feature.
+
+|  Pros  |   Cons  |
+|---------  |---------  |
+| Face detection  | Face Detection could make more work; unfamiliar to artists  |
+| Sync files between clients  | Another thing to download.  |
+| Flag frames, with flagged/rejected flags  |        |
+| Faster workflow for deleting flagged images.  |        |
+
+_The real questions to ask is if this is right for what you're looking to do. For me when I needed it to sort frames for videos, I felt it was sufficient for multiple editors, the ease of learning the program, and workflow speed increases, and for the reasons listed above._
