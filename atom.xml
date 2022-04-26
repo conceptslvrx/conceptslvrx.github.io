@@ -9,13 +9,13 @@
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>https://calvinmorett.github.io</id>
  <author>
-   <name>Calvin Morett</name>
+   <name>knowledge base</name>
  </author>
 
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="https://calvinmorett.github.io/_posts/{{ post.url }}"/>
+   <link href="/_posts/{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
