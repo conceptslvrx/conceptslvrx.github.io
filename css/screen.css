@@ -27,7 +27,6 @@
     margin: 0;
     padding: 0;
     font-style: normal;
-    -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -35,14 +34,15 @@ div {
     white-space: normal;
 }
 html {
-    background-color: #fff;
-    color:#000;
-    font-size: 2em;
-    font-family: Helvetica, sans-serif;
+    background-color: #fdfdfd;
+    overflow-x: hidden;
+    line-height: 1;
+    font-size: 100%;
 }
 html,
 body {
-    color:inherit;
+    color: #000;
+    font-family: 'Roboto', Arial, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, sans-serif;
 }
 h1,
 h2,
@@ -53,62 +53,51 @@ h6 {
     margin-top: 2em;
     margin-bottom: 1em;
     font-weight: 600;
-    line-height: 1.25;
 }
 h1 {
-    font-size: 1em;
-    padding: 10px 0;
-    line-height: 1.1;
+    padding-bottom: .5em;
     vertical-align: middle;
     display: inline-block;
     margin: 0;
     position: relative;
 }
 h2 {
-    font-size: 1.65em;
-    padding-bottom: .3em;
+    padding-bottom: .5em;
 }
-h3 {
-    font-size: 1.25em;
-}
+h3 {}
 h5 {
-    margin: 1 0 1em;
-    padding: 10px 0;
-    line-height: 1.1;
-}
-#home h1 {
-    -webkit-font-smoothing: antialiased;
-    -webkit-font-smoothing: subpixel-antialiased;
+    margin: 1em 0 1em;
+    padding: 1em 0;
 }
 
 #post h1 {
     margin: 0;
-    letter-spacing: 1px;
+    letter-spacing: 0;
     vertical-align: middle;
     display: inline-block;
     margin-bottom: 0;
     position: relative;
     font-weight: 800;
-    font-size: 1.38rem;
+    font-size: 2.6em;
     line-height: 1;
     word-wrap: break-word;
     clear: none;
     overflow: hidden;
-    text-transform: uppercase;
-    padding: 32px;
+    text-transform: capitalize;
+    padding: 1em 0;
 }
 #post {
     column-count: 1;
     column-gap: 60px;
     column-rule: 3px solid;
 }
-#post ul li a,
 #post ul li a:active,
+#post ul li a:link,
 #post ul li a:visited {
     font-weight: bold;
     text-decoration: none;
     transition: all .23s ease;
-    color: blue;
+    color: #3985ff;
 }
 p {
     margin-top: 0;
@@ -118,19 +107,18 @@ em {
     letter-spacing: -0.0123rem;
     font-weight: bold;
 }
-a,
-a:active,
+a:link,
 a:visited {
     font-weight: bold;
     text-decoration: none;
-    box-shadow: 0 1px;
-    transition: all .23s ease;
+    box-shadow: none;
+    color: #0026ff;
 }
-a:hover {
-    box-shadow: 0 1px;
+a:hover,
+a:active {
+    color: #4688ff;
     text-decoration: none;
 }
-#post p a,
 #post p a:active,
 #post p a:visited {
     color: blue;
@@ -159,7 +147,7 @@ blockquote {
     font-style: italic;
     position: relative;
     z-index: 20;
-    padding-left: 20px;
+    padding-left: 1.5em;
     letter-spacing: .02em;
     font-size: 1.5em;
     line-height: 1.4em;
@@ -253,16 +241,17 @@ table thead tr th:nth-child(2) {
     padding-right: 1em;
     content: '\203A';
     transition: margin-left .23s ease;
-    font-family: 'EB Garamond', Arial, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, sans-serif;
 }
 #home ul.posts {
     list-style-type: none;
-    margin: .8em 0 4em;
-    line-height: 1.4;
+    margin: 0.8em 0 4em;
+    line-height: inherit;
+    font-size: inherit;
 }
 #home ul.posts li:hover:before {
     list-style-type: none;
-    opacity:.5;
+    opacity: .5;
     xcontent: '\2192';
     xmargin-left: -1.3em;
 }
@@ -293,7 +282,7 @@ ul.posts span {
     margin-left: 10px;
 }
 #home ul.posts span {
-    color:inherit;
+    color: inherit;
 }
 /*****************************************************************************/
 /* 
@@ -301,35 +290,44 @@ ul.posts span {
 /* 
 /*****************************************************************************/
 .site {
-    font-size: 16px;
     text-align: left;
-    margin: 2em auto 0 auto;
-    line-height: 1.5em;
-    max-width: 50vw;
-    min-width: 42em;
+    margin: 2em auto;
+    line-height: 5vh;
+    max-width: 75vw;
+    font-size: 1em;
 }
 .title {
     font-weight: bold;
     margin-bottom: 2em;
 }
-.site .title a {
+.site .title a:link,
+.site .title a:visited {
     text-decoration: none;
     letter-spacing: 1px;
     box-shadow: none;
     transition: all .23s ease;
 }
 .site .title a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     box-shadow: 0 -1px;
 }
 .site .title a.extra {
     text-decoration: none;
-    margin-left: 1em;
+    margin-left: 0;
+    font-size: 1.25em;
     text-transform: capitalize;
     transition: all .23s ease;
 }
-.site .title a.extra:hover {
+.site .title a:link,
+.site .title a:visited,
+.site .title a:active {
+    color: #82878d;
     text-decoration: none;
+}
+.site .title a:hover {
+    color: #000;
+    text-decoration: none;
+    box-shadow: none;
 }
 
 .site .meta {
@@ -345,7 +343,7 @@ ul.posts span {
 }
 .site .footer {
     overflow: hidden;
-    background: #222;
+    background: #e3dfd9;
     margin-bottom: 0;
     padding: 20px 30px;
     font-weight: normal;
@@ -356,9 +354,11 @@ ul.posts span {
     -webkit-font-smoothing: antialiased;
     text-rendering: auto;
     display: flex;
-    height: 25px;
-    line-height: 25px;
+    height: 50px;
+    line-height: 50px;
     position: relative;
+    width: 100%;
+    margin: 0;
 }
 
 .site .footer .contact p {
@@ -369,11 +369,9 @@ ul.posts span {
 .site .footer .contact {
     margin: 0;
     display: flex;
-    flex-grow: unset;
     flex: auto;
     justify-content: space-between;
 }
-.site .footer .contact a,
 .site .footer .contact a:link,
 .site .footer .contact a:active,
 .site .footer .contact a:visited {
@@ -390,15 +388,14 @@ ul.posts span {
     outline: 0;
 }
 .site .footer .contact a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     box-shadow: none;
     border: 0;
 }
-.site .footer .contact .last-cell a,
 .site .footer .contact .last-cell a:link,
 .site .footer .contact .last-cell a:active,
 .site .footer .contact .last-cell a:visited {
-    color: rgba(255, 255, 255, 0)!important;
+    color: inherit;
 }
 .list-style-none {
     list-style: none!important;
@@ -441,11 +438,11 @@ svg {
         overflow-x: auto;
         white-space: pre-wrap;
         white-space: -moz-pre-wrap !important;
-        white-space: -pre-wrap;
+        white-space: pre-wrap;
         white-space: -o-pre-wrap;
         word-wrap: break-word;
         background: #fff;
-        color: #f9f2f4;
+        color: #000;
         font-family: 'BW Haas Text Mono C 55 Rom Regular', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
     }
 }
@@ -483,7 +480,7 @@ samp {
     overflow-x: auto;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap !important;
-    white-space: -pre-wrap;
+    white-space: pre-wrap;
     white-space: -o-pre-wrap;
     word-wrap: break-word;
 }
@@ -544,14 +541,12 @@ li pre code {
 #related {
     color: #fff;
 }
-#related a,
 #related a:link,
 #related a:active,
 #related a:visited {
     padding: 2px 4px;
     margin-left: 10px;
 }
-#related ul li a,
 #related ul li a:link,
 #related ul li a:active,
 #related ul li a:visited {
