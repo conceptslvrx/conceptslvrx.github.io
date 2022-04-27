@@ -12,7 +12,6 @@ again.
 
 ## License
 
-The following directories and their contents are Copyright Calvin Morett.
 You may not reuse anything therein without my permission:
 
 * \_posts/
